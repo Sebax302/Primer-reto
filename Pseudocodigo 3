@@ -1,0 +1,8 @@
+Algoritmo para calcular el area de un triangulo ()
+Inicio
+ Ingresar base del triangulo
+  Leer base
+ Ingresar altura del triangulo
+  Leer altura
+ Area = base * altura / 2
+ Escribir" Area del triangulo es 
