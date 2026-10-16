@@ -11,8 +11,26 @@ Leer nota1
 Fin_mientras
 //Control de ingreso nota2
 Escribir "Ingrese la nota del primer parcial (0 a la 10)"
-Leer nota1 
+Leer nota2
 mientras nota1 < 0 o nota 1 > 10 hacer
   Escribir"Nota invalida. Debe estar entre 0 y 10"
   Escribir"Ingrese nuevamente la nota del primer parcial"
-Leer nota1
+Leer nota2
+Fin_mientras
+//Control de ingreso nota2
+  Escribir "Ingrese la nota del primer parcial (0 a la 10)"
+  Escribir"Nota invalida.Debe estar entre 0 y 10"
+  Escribir "Ingrese nuevamente la nota del primer parcial"
+Leer nota3
+//Calculo del promedio ponderado
+promedio<- (nota1 * 0.30) + (nota2 * 0.30) + (nota3 *0.40)
+Escribir "El promedio final es: ",promedio 
+//Control de aprobacionn 
+si promedio >= 7 entonces 
+  Escribir "El estudiante aprueba la asigantura"
+  Sino
+  Escribir" El estudiante no aprueba la asignatura"
+ FinSi
+FinAlgoritmo
+
+
