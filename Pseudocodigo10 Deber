@@ -1,8 +1,8 @@
 Algoritmo_Conversion_Dolares_a_pesos
 //Declaraciones
-Definir USD, cambio como real
+Definir USD, cambio, pesosmx como real
 //Cuerpo
-  Escribir"Ingresar la cantidad en doalres"
+  Escribir"Ingresar la cantidad en USD"
 Leer USD
   Escribir"Ingresar tipo de cambio"
 Leer cambio
