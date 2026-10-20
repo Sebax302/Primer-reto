@@ -1,0 +1,26 @@
+Algoritmo Decimal_a_Binario 
+  //Declaraciones
+  Definir numero, residuo, contador, i Como Entero
+    Definir residuos Como Entero
+    Definir binario Como Cadena
+    Dimension residuos[32]
+    Escribir "Ingrese un numero decimal entero positivo"
+    Leer numero
+    contador <- 0
+    binario <- ""
+    Si numero = 0 Entonces
+        binario <- "0"
+    SiNo
+        Mientras numero > 0 Hacer
+            residuo <- numero MOD 2
+            contador <- contador + 1
+            residuos[contador] <- residuo
+            Escribir numero, " / 2: residuo = ", residuo
+            numero <- Trunc(numero / 2)
+        FinMientras
+        Para i <- contador Hasta 1 Con Paso -1 Hacer
+            binario <- Concatenar(binario, ConvertirATexto(residuos[i]))
+        FinPara
+    FinSi
+    Escribir "El numero en binario es: ", binario
+FinAlgoritmo
